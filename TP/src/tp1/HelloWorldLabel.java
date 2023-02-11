@@ -61,11 +61,12 @@ public class HelloWorldLabel extends Application {
     	
     	
     	
-        primaryStage.setTitle("Hello World!");
+        
         Pane root = new Pane();
         
         root.getChildren().addAll(lab, btn, cercle, ligne);
         primaryStage.setScene(new Scene(root, 300,250));
+        primaryStage.setTitle("Hello World!");
         primaryStage.show();
     }
 }

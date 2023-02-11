@@ -19,7 +19,7 @@ public class TestBorderPane extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World!");
+        
         
         Button btn1 = new Button("Haut");
         Button btn2 = new Button("Bas");
@@ -44,6 +44,7 @@ public class TestBorderPane extends Application {
         BorderPane.setAlignment(btn5, Pos.TOP_LEFT); 
         
         primaryStage.setScene(new Scene(root, 300, 200));
+        primaryStage.setTitle("Hello World!");
         primaryStage.show();
     }
 }
