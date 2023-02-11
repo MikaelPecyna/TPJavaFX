@@ -1,8 +1,11 @@
 package tp1;
  
+
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
@@ -33,6 +36,8 @@ public class HelloWorldLabel extends Application {
     	Label lab = new Label("OeuilDroit");
     	lab.setLayoutX(180);
     	lab.setLayoutY(20);
+    	lab.setStyle("-fx-border-witdh:10 ; -fx-border-color:black");
+    	lab.setPadding(new Insets(10,20,30,50));
     	
     	Circle cercle = new Circle(); 
     	cercle.setFill(Color.RED);
@@ -59,7 +64,7 @@ public class HelloWorldLabel extends Application {
         Pane root = new Pane();
         
         root.getChildren().addAll(lab, btn, cercle, ligne);
-        primaryStage.setScene(new Scene(root));
+        primaryStage.setScene(new Scene(root, 300,250));
         primaryStage.show();
     }
 }
