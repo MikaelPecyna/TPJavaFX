@@ -45,7 +45,7 @@ public class TestHBox extends Application {
         HBox root = new HBox();
         
         root.getChildren().addAll(btn1, ressort, btn2, btn3);
-        root.setAlignment(Pos.TOP_CENTER);
+        
         
 //        HBox.setMargin(btn1, new Insets(0, 50, 0, 0 ));
 //        HBox.setMargin(btn2, new Insets(0, 0, 20, 0));
