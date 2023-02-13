@@ -31,6 +31,8 @@ public class Board extends GridPane {
 				this.setCell(' ', x+1, y+1, "-fx-background-color: red;");
 			}
 		}
+		
+		this.resetCell(2,2);
 	}
 	
 	public void setCell(char v, int x, int y, String numberColor) {
@@ -42,7 +44,7 @@ public class Board extends GridPane {
 	}
 	
 	public void resetCell(int x, int y) {
-		this.getChildren().remove(x, y);
+		// TODO
 		
 	}
 	

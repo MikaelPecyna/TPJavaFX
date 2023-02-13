@@ -24,7 +24,7 @@ public class Tester extends Application {
     	
     	
         
-        Board root = new Board(15);
+        Direction root = new Direction();
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.setTitle("Hello World!");
         primaryStage.show();
