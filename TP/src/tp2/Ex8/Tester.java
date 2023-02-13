@@ -20,11 +20,18 @@ public class Tester extends Application {
     @Override
     public void start(Stage primaryStage) {
     	
+    	String[] roles = new String[3];
     	
-    	
+    	roles[0]="JCVD";
+    	roles[1]="KEANUREEVES";
+    	roles[2]="DIEU";
     	
         
-        Direction root = new Direction();
+        RoleChoice root = new RoleChoice(roles);
+        
+        root.setRole(0);
+        root.setRole(1);
+        root.setRole(2);
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.setTitle("Hello World!");
         primaryStage.show();
