@@ -29,6 +29,6 @@ public class MyButton extends Button {
 		this.column = column;
 	}
 	
-	
+		
 
 }
