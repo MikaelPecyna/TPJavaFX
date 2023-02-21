@@ -45,7 +45,7 @@ public class Main extends Application {
         
         lab.setOnMousePressed(e -> {
         	if(this.labcolor) {
-//        		System.out.println("Lab click");
+        		System.out.println("Lab click");
         		lab.setStyle("-fx-text-fill: orange; -fx-background-color: green;");
         	}else {
         		lab.setStyle("-fx-text-fill: green; -fx-background-color: orange;");
