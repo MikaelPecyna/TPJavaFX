@@ -18,7 +18,7 @@ public class BorderWithQuitCLA extends BorderPane {
 		super();
 		Button quit = new Button("quit");
 		this.setBottom(quit);
-		quit.setAlignment(Pos.BOTTOM_LEFT);
+		quit.setAlignment(Pos.BOTTOM_RIGHT);
 		
 		quit.addEventHandler(ActionEvent.ACTION, new EventHandler(){
 			@Override
