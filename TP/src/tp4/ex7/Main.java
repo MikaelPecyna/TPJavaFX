@@ -12,6 +12,8 @@ import javafx.stage.Stage;
  
 public class Main extends Application {
 	private boolean color = true; 
+	private boolean labcolor = true; 
+	
     public static void main(String[] args) {
         launch(args);
     }
@@ -37,6 +39,22 @@ public class Main extends Application {
         	this.color = !this.color; 
         });
         
+        Label lab = new Label("Text de fond !"); 
+        
+        lab.setStyle("-fx-text-fill: green; -fx-background-color: orange;");
+        
+        lab.setOnMousePressed(e -> {
+        	if(this.labcolor) {
+//        		System.out.println("Lab click");
+        		lab.setStyle("-fx-text-fill: orange; -fx-background-color: green;");
+        	}else {
+        		lab.setStyle("-fx-text-fill: green; -fx-background-color: orange;");
+        	}
+        	this.labcolor = !this.labcolor; 
+        });
+        
+        
+        root.getChildren().add(lab);
         
 //        root.getChildren().add(lab);
         primaryStage.setScene(new Scene(root, 300, 250));
