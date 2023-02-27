@@ -34,7 +34,7 @@ public class Main extends Application {
         	if(e.isAltDown()) {
         		this.scrol += e.getDeltaY() * 10;
             	compteur.setText(Float.toString(this.scrol));
-        	}
+        	}  
         	else {
         		this.scrol += e.getDeltaY();
             	compteur.setText(Float.toString(this.scrol));
