@@ -18,10 +18,13 @@ public class App2 extends Application {
     public void start(Stage primaryStage) {
         
     	MyTextField size = new MyTextField("Size");
+    	size.valueProperty().setValue("20");
     	MyTextField color = new MyTextField("Color");
+    	color.valueProperty().setValue("white");
 //    	X.valueProperty();
     	
     	Label lab = new Label("Le Texte");
+    	
     	
     	lab.styleProperty().bind(new StyleWithColorProperty(color.valueProperty(), size.valueProperty()));
     	

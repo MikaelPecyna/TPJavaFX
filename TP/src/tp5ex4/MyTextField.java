@@ -16,10 +16,13 @@ public class MyTextField extends HBox {
 		
 		this.getChildren().addAll(lab, tf);
 		
+		
 	}
 	
 	public StringProperty valueProperty() {
 		return this.tf.textProperty();
 	}
+	
+	
 
 }
